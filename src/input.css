@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+
+@theme {
+  --spacing-container: 4rem;
+  --color-lemon-green: #b9ff66;
+}
