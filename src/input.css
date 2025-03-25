@@ -2,5 +2,6 @@
 
 @theme {
   --spacing-container: 4rem;
+  --spacing-container-sm: 1rem;
   --color-lemon-green: #b9ff66;
 }

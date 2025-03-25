@@ -11,9 +11,13 @@
       rel="stylesheet"
       href="output.css"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="px-container bg-white">
+    <div class="px-container-sm lg:px-container bg-white">
       <!--  Navbar  -->
       <nav class="flex justify-between items-center p-4">
         <div>
@@ -22,7 +26,7 @@
             alt="Positivus Logo"
           />
         </div>
-        <div class="flex items-center gap-20 justify-between">
+        <div class="hidden lg:flex items-center gap-20 justify-between">
           <ul class="flex items-center gap-16">
             <li><a href="#">About us</a></li>
             <li>Serivces</li>
@@ -35,6 +39,9 @@
           >
             Request a quote
           </button>
+        </div>
+        <div class="block lg:hidden">
+          <i class="bx bx-menu text-2xl"></i>
         </div>
       </nav>
     </div>

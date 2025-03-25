@@ -10,6 +10,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --radius-lg: 0.5rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -19,6 +21,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --spacing-container: 4rem;
+    --spacing-container-sm: 1rem;
   }
 }
 @layer base {
@@ -1239,8 +1242,8 @@
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
-  .px-container {
-    padding-inline: var(--spacing-container);
+  .px-container-sm {
+    padding-inline: var(--spacing-container-sm);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -1286,6 +1289,10 @@
   }
   .align-top {
     vertical-align: top;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .leading-none {
     --tw-leading: 1;
@@ -1818,6 +1825,21 @@
       @media (hover: hover) {
         color: var(--color-white);
       }
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
+    }
+  }
+  .lg\:px-container {
+    @media (width >= 64rem) {
+      padding-inline: var(--spacing-container);
     }
   }
 }
