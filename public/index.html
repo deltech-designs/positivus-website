@@ -6,44 +6,104 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="output.css"
-    />
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="px-container-sm lg:px-container bg-white">
-      <!--  Navbar  -->
-      <nav class="flex justify-between items-center p-4">
+  <body class="bg-white">
+    <div class="px-4 lg:px-16 bg-white">
+      <!-- Navbar -->
+      <nav class="flex justify-between items-center p-4 relative">
+        <!-- Logo -->
         <div>
           <img
             src="./assets/Logo.png"
             alt="Positivus Logo"
           />
         </div>
-        <div class="hidden lg:flex items-center gap-20 justify-between">
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center gap-20">
           <ul class="flex items-center gap-16">
-            <li><a href="#">About us</a></li>
-            <li>Serivces</li>
-            <li>Use Cases</li>
-            <li>Pricing</li>
-            <li>Blog</li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-gray-500"
+                >About us</a
+              >
+            </li>
+            <li class="hover:text-gray-500 cursor-pointer">Services</li>
+            <li class="hover:text-gray-500 cursor-pointer">Use Cases</li>
+            <li class="hover:text-gray-500 cursor-pointer">Pricing</li>
+            <li class="hover:text-gray-500 cursor-pointer">Blog</li>
           </ul>
           <button
-            class="border border-black px-3 py-3 rounded-lg transition-all duration-300 hover:bg-black hover:text-white cursor-pointer ease-in-out"
+            class="border border-black px-4 py-2 rounded-lg transition-all duration-300 hover:bg-black hover:text-white cursor-pointer"
           >
             Request a quote
           </button>
         </div>
-        <div class="block lg:hidden">
-          <i class="bx bx-menu text-2xl"></i>
-        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="text-3xl lg:hidden focus:outline-none"
+        >
+          <i
+            class="bx bx-menu"
+            id="menu-icon"
+          ></i>
+        </button>
       </nav>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 pt-16 lg:hidden"
+      >
+        <button
+          id="close-icon"
+          class="absolute top-4 right-4 text-3xl"
+        >
+          <i class="bx bx-x"></i>
+        </button>
+        <div class="flex flex-col space-y-6 items-center">
+          <a
+            href="#"
+            class="text-lg hover:text-gray-500"
+            >About us</a
+          >
+          <a
+            href="#"
+            class="text-lg hover:text-gray-500"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-lg hover:text-gray-500"
+            >Use Cases</a
+          >
+          <a
+            href="#"
+            class="text-lg hover:text-gray-500"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="text-lg hover:text-gray-500"
+            >Blog</a
+          >
+          <button
+            class="border border-black px-4 py-2 rounded-lg transition-all duration-300 hover:bg-black hover:text-white cursor-pointer"
+          >
+            Request a quote
+          </button>
+        </div>
+      </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
