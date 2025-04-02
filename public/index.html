@@ -12,11 +12,24 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-white">
     <div class="px-4 lg:px-16 bg-white">
       <!-- Navbar -->
-      <nav class="flex justify-between items-center p-4 relative">
+      <nav class="flex justify-between items-center p-4 relative font-sans">
         <!-- Logo -->
         <div>
           <img
@@ -103,7 +116,81 @@
           </button>
         </div>
       </div>
+
+      <!-- Hero Section  -->
+      <section
+        class="flex flex-col md:flex-col lg:flex-row justify-between items-center my-4 lg:mt-6 "
+      >
+        <!-- Column 1  -->
+        <div class="w-full md:w-9/12 lg:w-1/2">
+          <h1
+            class="font-sans text-[36px] lg:text-[60px] w-full md:w-[40%] lg:w-3/4 font-bold leading-1 my-3"
+          >
+            Navigating the digital landscape for success
+          </h1>
+          <div class="hidden lg:block">
+            <p class="w-[400px] font-sans text-[16px]">
+              Our digital marketing agency helps businesses grow and succeed
+              online thr ough a range of services including SEO, PPC, social
+              media marketing, and content creation.
+            </p>
+
+            <button class="bg-black text-white rounded-lg px-4 py-2 mt-4">
+              Book a consultation
+            </button>
+          </div>
+        </div>
+        <!-- column 2  -->
+        <div class="w-full lg:w-[50%]">
+          <img
+            src="./assets//Illustration.png"
+            alt="Illustration"
+          />
+          <div class="block lg:hidden">
+            <p class="w-full lg:w-[400px] font-sans text-[16px]">
+              Our digital marketing agency helps businesses grow and succeed
+              online through a range of services including SEO, PPC, social
+              media marketing, and content creation.
+            </p>
+
+            <button
+              class="bg-black text-white rounded-lg px-4 py-2 mt-4 w-full"
+            >
+              Book a consultation
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <!-- Partners -->
+    <marquee
+      behavior=" "
+      direction="rtl"
+    >
+      <div class="grid grid-cols-5">
+        <img
+          src="./assets/amazon.png"
+          alt="amazon_logo"
+        />
+        <img
+          src="./assets/dribbble.png"
+          alt="dribbble_logo"
+        />
+        <img
+          src="./assets/hubspot.png"
+          alt="hubspot"
+        />
+        <img
+          src="./assets/notion.png"
+          alt="notion_logo"
+        />
+        <img
+          src="./assets/zoom.png"
+          alt="zoom_logo"
+        />
+      </div>
+    </marquee>
     <script src="./script.js"></script>
   </body>
 </html>

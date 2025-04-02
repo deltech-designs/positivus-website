@@ -1,7 +1,16 @@
 @import 'tailwindcss';
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'); */
 
 @theme {
   --spacing-container: 4rem;
   --spacing-container-sm: 1rem;
   --color-lemon-green: #b9ff66;
+  --font-sans: 'Space Grotesk', sans-serif;
 }
+
+/* .space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+} */
