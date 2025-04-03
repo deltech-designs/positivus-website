@@ -1,196 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Responsive Navbar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-white">
-    <div class="px-4 lg:px-16 bg-white">
-      <!-- Navbar -->
-      <nav class="flex justify-between items-center p-4 relative font-sans">
-        <!-- Logo -->
-        <div>
-          <img
-            src="./assets/Logo.png"
-            alt="Positivus Logo"
-          />
-        </div>
 
-        <!-- Desktop Menu -->
-        <div class="hidden lg:flex items-center gap-20">
-          <ul class="flex items-center gap-16">
-            <li>
-              <a
-                href="#"
-                class="hover:text-gray-500"
-                >About us</a
-              >
-            </li>
-            <li class="hover:text-gray-500 cursor-pointer">Services</li>
-            <li class="hover:text-gray-500 cursor-pointer">Use Cases</li>
-            <li class="hover:text-gray-500 cursor-pointer">Pricing</li>
-            <li class="hover:text-gray-500 cursor-pointer">Blog</li>
-          </ul>
-          <button
-            class="border border-black px-4 py-2 rounded-lg transition-all duration-300 hover:bg-black hover:text-white cursor-pointer"
-          >
-            Request a quote
-          </button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
+</head>
 
-        <!-- Mobile Menu Button -->
-        <button
-          id="menu-btn"
-          class="text-3xl lg:hidden focus:outline-none"
-        >
-          <i
-            class="bx bx-menu"
-            id="menu-icon"
-          ></i>
-        </button>
-      </nav>
-
-      <!-- Mobile Menu (Hidden by Default) -->
-      <div
-        id="mobile-menu"
-        class="fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 pt-16 lg:hidden"
-      >
-        <button
-          id="close-icon"
-          class="absolute top-4 right-4 text-3xl"
-        >
-          <i class="bx bx-x"></i>
-        </button>
-        <div class="flex flex-col space-y-6 items-center">
-          <a
-            href="#"
-            class="text-lg hover:text-gray-500"
-            >About us</a
-          >
-          <a
-            href="#"
-            class="text-lg hover:text-gray-500"
-            >Services</a
-          >
-          <a
-            href="#"
-            class="text-lg hover:text-gray-500"
-            >Use Cases</a
-          >
-          <a
-            href="#"
-            class="text-lg hover:text-gray-500"
-            >Pricing</a
-          >
-          <a
-            href="#"
-            class="text-lg hover:text-gray-500"
-            >Blog</a
-          >
-          <button
-            class="border border-black px-4 py-2 rounded-lg transition-all duration-300 hover:bg-black hover:text-white cursor-pointer"
-          >
-            Request a quote
-          </button>
-        </div>
+<body class="bg-white">
+  <div class="px-4 lg:px-16 bg-whit">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-4 relative font-sans">
+      <!-- Logo -->
+      <div>
+        <img src="./assets/Logo.png" alt="Positivus Logo" />
       </div>
 
-      <!-- Hero Section  -->
-      <section
-        class="flex flex-col md:flex-col lg:flex-row justify-between items-center my-4 lg:mt-6 "
-      >
-        <!-- Column 1  -->
-        <div class="w-full md:w-9/12 lg:w-1/2">
-          <h1
-            class="font-sans text-[36px] lg:text-[60px] w-full md:w-[40%] lg:w-3/4 font-bold leading-1 my-3"
-          >
-            Navigating the digital landscape for success
-          </h1>
-          <div class="hidden lg:block">
-            <p class="w-[400px] font-sans text-[16px]">
-              Our digital marketing agency helps businesses grow and succeed
-              online thr ough a range of services including SEO, PPC, social
-              media marketing, and content creation.
-            </p>
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex items-center gap-20">
+        <ul class="flex items-center gap-16">
+          <li>
+            <a href="#" class="hover:text-gray-500">About us</a>
+          </li>
+          <li class="hover:text-gray-500 cursor-pointer">Services</li>
+          <li class="hover:text-gray-500 cursor-pointer">Use Cases</li>
+          <li class="hover:text-gray-500 cursor-pointer">Pricing</li>
+          <li class="hover:text-gray-500 cursor-pointer">Blog</li>
+        </ul>
+        <button
+          class="border border-black px-4 py-2 rounded-lg transition-all duration-300 hover:bg-black hover:text-white cursor-pointer">
+          Request a quote
+        </button>
+      </div>
 
-            <button class="bg-black text-white rounded-lg px-4 py-2 mt-4">
-              Book a consultation
-            </button>
-          </div>
-        </div>
-        <!-- column 2  -->
-        <div class="w-full lg:w-[50%]">
-          <img
-            src="./assets//Illustration.png"
-            alt="Illustration"
-          />
-          <div class="block lg:hidden">
-            <p class="w-full lg:w-[400px] font-sans text-[16px]">
-              Our digital marketing agency helps businesses grow and succeed
-              online through a range of services including SEO, PPC, social
-              media marketing, and content creation.
-            </p>
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="text-3xl lg:hidden focus:outline-none">
+        <i class="bx bx-menu" id="menu-icon"></i>
+      </button>
+    </nav>
 
-            <button
-              class="bg-black text-white rounded-lg px-4 py-2 mt-4 w-full"
-            >
-              Book a consultation
-            </button>
-          </div>
-        </div>
-      </section>
+    <!-- Mobile Menu (Hidden by Default) -->
+    <div id="mobile-menu"
+      class="fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 pt-16 lg:hidden">
+      <button id="close-icon" class="absolute top-4 right-4 text-3xl">
+        <i class="bx bx-x"></i>
+      </button>
+      <div class="flex flex-col space-y-6 items-center">
+        <a href="#" class="text-lg hover:text-gray-500">About us</a>
+        <a href="#" class="text-lg hover:text-gray-500">Services</a>
+        <a href="#" class="text-lg hover:text-gray-500">Use Cases</a>
+        <a href="#" class="text-lg hover:text-gray-500">Pricing</a>
+        <a href="#" class="text-lg hover:text-gray-500">Blog</a>
+        <button
+          class="border border-black px-4 py-2 rounded-lg transition-all duration-300 hover:bg-black hover:text-white cursor-pointer">
+          Request a quote
+        </button>
+      </div>
     </div>
 
-    <!-- Partners -->
-    <marquee
-      behavior=" "
-      direction="rtl"
-    >
-      <div class="grid grid-cols-5">
-        <img
-          src="./assets/amazon.png"
-          alt="amazon_logo"
-        />
-        <img
-          src="./assets/dribbble.png"
-          alt="dribbble_logo"
-        />
-        <img
-          src="./assets/hubspot.png"
-          alt="hubspot"
-        />
-        <img
-          src="./assets/notion.png"
-          alt="notion_logo"
-        />
-        <img
-          src="./assets/zoom.png"
-          alt="zoom_logo"
-        />
+    <!-- Hero Section  -->
+    <section class="flex flex-col md:flex-col lg:flex-row justify-between items-center my-4 lg:mt-6 ">
+      <!-- Column 1  -->
+      <div class="w-full md:w-9/12 lg:w-1/2">
+        <h1 class="font-sans text-[36px] lg:text-[60px] w-full md:w-[40%] lg:w-3/4 font-bold leading-1 my-3">
+          Navigating the digital landscape for success
+        </h1>
+        <div class="hidden lg:block">
+          <p class="w-[400px] font-sans text-[16px]">
+            Our digital marketing agency helps businesses grow and succeed
+            online thr ough a range of services including SEO, PPC, social
+            media marketing, and content creation.
+          </p>
+
+          <button class="bg-black text-white rounded-lg px-4 py-2 mt-4">
+            Book a consultation
+          </button>
+        </div>
       </div>
-    </marquee>
-    <script src="./script.js"></script>
-  </body>
+      <!-- column 2  -->
+      <div class="w-full lg:w-[50%]">
+        <img src="./assets//Illustration.png" alt="Illustration" />
+        <div class="block lg:hidden">
+          <p class="w-full lg:w-[400px] font-sans text-[16px]">
+            Our digital marketing agency helps businesses grow and succeed
+            online through a range of services including SEO, PPC, social
+            media marketing, and content creation.
+          </p>
+
+          <button class="bg-black text-white rounded-lg px-4 py-2 mt-4 w-full">
+            Book a consultation
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Partners -->
+    <section>
+      <div class="grid grid-cols-3 lg:grid-cols-6 gap-2.5 lg:gap-2.5 place-items-center items-center mt-8">
+        <img src="./assets/amazon.png" alt="amazon_logo" class="w-[80%] lg:w-[40%]" />
+        <img src="./assets/dribbble.png" alt="dribbble_logo" class="w-[80%] lg:w-[40%]" />
+        <img src="./assets/hubspot.png" alt="hubspot" class="w-[80%] lg:w-[40%]" />
+        <img src="./assets/notion.png" alt="notion_logo" class="w-[80%] lg:w-[40%]" />
+        <img src="./assets/netflix.png" alt="netflix_logo" class="w-[80%] lg:w-[40%]" />
+        <img src="./assets/zoom.png" alt="zoom_logo" class="w-[80%] lg:w-[40%]" />
+      </div>
+    </section>
+
+
+    <!-- Services -->
+    <section class="my-20">
+      <div class="flex flex-col lg:flex-row  justify-center lg:justify-between items-center w-full lg:w-[50%] gap-8">
+        <div class="bg-[#b9ff66] text-3xl px-4 py-2 rounded font-medium font-sans">Services</div>
+        <p class="text-[16px] text-center lg:text-left">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+      </div>
+      <div></div>
+    </section>
+  </div>
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
